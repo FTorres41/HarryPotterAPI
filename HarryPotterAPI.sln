@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29306.81
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HarryPotter.API", "WebAPIBase.NetCore\HarryPotter.API.csproj", "{33A4C66E-6332-451E-9624-8D6D58A6E51F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HarryPotter.API", "API\HarryPotter.API.csproj", "{33A4C66E-6332-451E-9624-8D6D58A6E51F}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HarryPotter.Data", "Data\HarryPotter.Data.csproj", "{0F95F1B6-7F46-4892-91E3-C1948A8F86FF}"
 EndProject
