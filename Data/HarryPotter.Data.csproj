@@ -19,7 +19,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Model\HarryPotter.Model.csproj" />
+    <ProjectReference Include="..\Model\HarryPotter.Domain.csproj" />
   </ItemGroup>
 
 </Project>

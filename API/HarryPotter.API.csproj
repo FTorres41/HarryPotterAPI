@@ -21,7 +21,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Data\HarryPotter.Data.csproj" />
-    <ProjectReference Include="..\Model\HarryPotter.Model.csproj" />
+    <ProjectReference Include="..\Model\HarryPotter.Domain.csproj" />
     <ProjectReference Include="..\Service\HarryPotter.Service.csproj" />
   </ItemGroup>
 </Project>

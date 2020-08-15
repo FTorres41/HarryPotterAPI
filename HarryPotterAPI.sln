@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HarryPotter.API", "API\Harr
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HarryPotter.Data", "Data\HarryPotter.Data.csproj", "{0F95F1B6-7F46-4892-91E3-C1948A8F86FF}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HarryPotter.Model", "Model\HarryPotter.Model.csproj", "{FD8EE623-32A6-44A0-8D4D-113E38C8A79F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HarryPotter.Domain", "Model\HarryPotter.Domain.csproj", "{FD8EE623-32A6-44A0-8D4D-113E38C8A79F}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HarryPotter.Service", "Service\HarryPotter.Service.csproj", "{5921C0A1-371F-43D3-BD67-80FBA592B184}"
 EndProject

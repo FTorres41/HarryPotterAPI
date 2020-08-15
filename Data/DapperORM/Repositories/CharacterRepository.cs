@@ -4,6 +4,8 @@ using System.Linq;
 using HarryPotter.Data.DapperORM.Interface;
 using HarryPotter.Model;
 using System.Collections.Generic;
+using Microsoft.Extensions.Configuration;
+using System.IO;
 
 namespace HarryPotter.Data.DapperORM.Class
 {

@@ -31,7 +31,7 @@ namespace HarryPotter.API.Controllers
         [Route("insert")]
         public JsonResult InsertCharacter([FromBody]CreateCharacterRequest request)
         {
-            _characterService.InsertCharacter(request.Name, request.Role, request.Patronus, request.School, request.House);
+            _characterService.InsertCharacter(request.Name, request.Role, request.Patronus, request.House);
             return Json("Personagem criado com sucesso");
         }
 
