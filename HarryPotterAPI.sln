@@ -11,7 +11,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HarryPotter.Domain", "Model
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HarryPotter.Service", "Service\HarryPotter.Service.csproj", "{5921C0A1-371F-43D3-BD67-80FBA592B184}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HarryPotter.Utils", "Utils\HarryPotter.Utils.csproj", "{53D33712-7B0F-4C71-A843-2B2EA24EF0BE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HarryPotter.Tests", "HarryPotter.Tests\HarryPotter.Tests.csproj", "{98358D78-86CE-470A-B73B-C8BDF9CF4335}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -35,10 +35,10 @@ Global
 		{5921C0A1-371F-43D3-BD67-80FBA592B184}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5921C0A1-371F-43D3-BD67-80FBA592B184}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5921C0A1-371F-43D3-BD67-80FBA592B184}.Release|Any CPU.Build.0 = Release|Any CPU
-		{53D33712-7B0F-4C71-A843-2B2EA24EF0BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{53D33712-7B0F-4C71-A843-2B2EA24EF0BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{53D33712-7B0F-4C71-A843-2B2EA24EF0BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{53D33712-7B0F-4C71-A843-2B2EA24EF0BE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{98358D78-86CE-470A-B73B-C8BDF9CF4335}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{98358D78-86CE-470A-B73B-C8BDF9CF4335}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{98358D78-86CE-470A-B73B-C8BDF9CF4335}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{98358D78-86CE-470A-B73B-C8BDF9CF4335}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

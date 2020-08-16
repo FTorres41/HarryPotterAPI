@@ -2,6 +2,7 @@
 using MySql.Data.MySqlClient;
 using System.Data.SqlClient;
 using System.IO;
+using System.Threading.Tasks;
 
 namespace HarryPotter.Data.DapperORM.Class
 {
@@ -9,8 +10,7 @@ namespace HarryPotter.Data.DapperORM.Class
     {
         public static IConfigurationRoot Configuration { get; set; }
 
-        public SqlConnection GetSqlConnection(bool open = true,
-            bool convertZeroDatetime = false, bool allowZeroDatetime = false)
+        public SqlConnection GetSqlConnection(bool open = true)
         {
             IConfigurationBuilder builder = new ConfigurationBuilder()
                 .SetBasePath(Directory.GetCurrentDirectory())
@@ -20,7 +20,7 @@ namespace HarryPotter.Data.DapperORM.Class
 
             var cs = Configuration["Logging:AppSettings:SqlConnectionString"];
             var conn = new SqlConnection(cs);
-            if (open) conn.Open();
+            //if (open) conn.Open();
 
             return conn;
         }

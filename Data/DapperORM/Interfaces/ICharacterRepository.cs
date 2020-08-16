@@ -1,5 +1,6 @@
 ﻿using HarryPotter.Model;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 
 namespace HarryPotter.Data.DapperORM.Interface
 {
@@ -7,6 +8,12 @@ namespace HarryPotter.Data.DapperORM.Interface
     {
         IEnumerable<Character> GetCharacters(string house = "", string patronus = "", string school = "", string role = "");
 
-        void InsertCharacter(string name, string role, string house, string patronus, string school);
+        bool InsertCharacter(string name, string role, string house, string patronus, string school);
+        
+        Character GetCharacterById(string id);
+
+        bool UpdateCharacter(Character characterToUpdate);
+
+        bool DeleteCharacter(string id);
     }
 }
