@@ -11,6 +11,7 @@
     <PackageReference Include="EasyMemoryCache" Version="1.0.8" />
     <PackageReference Include="Microsoft.AspNetCore.Authentication" Version="2.2.0" />
     <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="3.1.2" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="3.1.7" />
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.1" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="5.0.0" />
   </ItemGroup>
@@ -21,6 +22,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Data\HarryPotter.Data.csproj" />
+    <ProjectReference Include="..\HarryPotter.Util\HarryPotter.Util.csproj" />
     <ProjectReference Include="..\Model\HarryPotter.Domain.csproj" />
     <ProjectReference Include="..\Service\HarryPotter.Service.csproj" />
   </ItemGroup>

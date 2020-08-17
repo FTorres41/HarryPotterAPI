@@ -4,6 +4,7 @@ using HarryPotter.API.Requests;
 using HarryPotter.Service.Interface;
 using HarryPotter.Model.Requests;
 using System.Threading.Tasks;
+using HarryPotter.Util;
 
 namespace HarryPotter.API.Controllers
 {
@@ -32,9 +33,14 @@ namespace HarryPotter.API.Controllers
         [Route("insert")]
         public ActionResult InsertCharacter([FromBody]CreateCharacterRequest request)
         {
-            var result = _characterService.InsertCharacter(request.Name, request.Role, request.Patronus, request.House);
+            request.Validate();
+
+            if (request.Invalid)
+                return BadRequest($"Favor informar valores válidos para: {ErrorHelper.GetErrors(request)}");
+
+            _characterService.InsertCharacter(request.Name, request.Role, request.Patronus, request.House);
             
-            return Ok(result);
+            return Ok();
         }
 
         [AllowAnonymous]
@@ -42,9 +48,14 @@ namespace HarryPotter.API.Controllers
         [Route("update")]
         public ActionResult UpdateCharacter([FromBody] UpdateCharacterRequest request)
         {
-            var result = _characterService.UpdateCharacter(request.Id, request.Name, request.Role, request.Patronus, request.House);
+            request.Validate();
 
-            return Ok(result);
+            if (request.Invalid)
+                return BadRequest($"Favor informar valores válidos para: {ErrorHelper.GetErrors(request)}");
+
+            _characterService.UpdateCharacter(request.Id, request.Name, request.Role, request.Patronus, request.House);
+
+            return Ok();
         }
 
         [AllowAnonymous]

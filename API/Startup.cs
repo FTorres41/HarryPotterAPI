@@ -46,6 +46,8 @@ namespace HarryPotter.API
             services.AddSingleton<IConfiguration>(Configuration);
             services.AddSingleton<ICaching, Caching>();
 
+            services.AddControllers().AddNewtonsoftJson(options => options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore);
+
             services.AddAuthorization(options =>
             {
                 options.AddPolicy("Member",
